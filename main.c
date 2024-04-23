@@ -9,22 +9,22 @@ int main() {
     int i;
     long long S = 1000;
 
-    printf("Nhập số phần tử của dãy: ");
+    printf("Nhap so phan tu cua day: ");
     scanf("%d", &n);
 
-    printf("Nhập dãy số nguyên: \n");
+    printf("Nhap day so nguyen: \n");
     for (i = 0; i < n; ++i) {
-        printf("Nhập phần tử thứ %d: ", i + 1);
+        printf("Nhap phan tu thu %d: ", i + 1);
         scanf("%d", &arr[i]);
     }
 
-    printf("Dãy số vừa nhập: ");
+    printf("Day so vua nhap: ");
     for (i = 0; i < n; ++i) {
         printf("%d ", arr[i]);
     }
     printf("\n");
 
-    printf("Nhập giá trị x cần tìm: ");
+    printf("Nhap gia tri x can tim: ");
     scanf("%d", &x);
 
     for (i = 0; i < n; ++i) {
@@ -33,13 +33,13 @@ int main() {
         }
     }
 
-    printf("Số lần xuất hiện của %d trong dãy là: %d\n", x, count);
+    printf("So lan xuat hien cua %d trong day la: %d\n", x, count);
 
     for (i = 0; i < n; ++i) {
         S -= (i + arr[i]) * (i + arr[i]);
     }
 
-    printf("Giá trị của biểu thức S: %lld\n", S);
+    printf("Gia tri cua bieu thuc S: %lld\n", S);
 
     return 0;
 }
